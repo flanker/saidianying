@@ -1,0 +1,13 @@
+.mission-impossible-rogue-nation {
+  .poster1 { background-image: url({{ site.static_url }}/images/mission-impossible-rogue-nation/poster.jpg); }
+  .poster-collection { background-image: url({{ site.static_url }}/images/mission-impossible-rogue-nation/poster-collection.jpg); }
+}
+
+.mission-impossible-rogue-nation.movie-info {
+  .name {
+    font-size: 1em;
+  }
+  .year {
+    padding-left: 0;
+  }
+}
