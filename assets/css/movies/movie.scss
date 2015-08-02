@@ -115,6 +115,59 @@ ul, li {
     }
   }
 }
+.music-cover {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding-top: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .img-wraper {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: rgba(200, 200, 200 , 0.5);
+    -webkit-animation: spinning 8000ms infinite linear;
+
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+    }
+  }
+  .player {
+    width: 60px;
+    height: 60px;
+    margin: 10px auto;
+    background-image: url({{ site.static_url }}/images/play.png);
+    background-size: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    background-position: 0 61px;
+  }
+}
+.music-cover.pause {
+  .player {
+    background-position: 0 0;
+  }
+  .img-wraper {
+    -webkit-animation: none;
+  }
+}
+@-webkit-keyframes spinning {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
 .map {
   background-image: url({{ site.static_url }}/images/movies/map.png);
   background-position: center;

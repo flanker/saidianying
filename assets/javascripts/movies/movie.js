@@ -8,8 +8,25 @@ $(function() {
       } else {
         $('.screen-arrowBox').show();
       }
+      if (nextIndex == 2) {
+        $('#music')[0].play();
+      }
       return true;
     }
+  });
+
+  $('.player').tap(function (e) {
+    $('.music-cover').toggleClass('pause');
+    var music = $('#music')[0];
+    if (music.paused && music.currentTime > 0) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  })
+
+  $('#music').bind('ended', function(){
+    $('.music-cover').addClass('pause');
   });
 
   var $movieInfo = $('.movie-info');

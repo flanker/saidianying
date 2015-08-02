@@ -21,6 +21,12 @@ description: 电影
       -#   .year
       -#     2015年8月2日
     .section
+      .music-cover
+        .img-wraper
+          %img{ src: "#{Configr.site['static_url']}/images/mission-impossible-rogue-nation/music.jpg" }
+        .player.pause
+      .poster.poster-music.poster-blur
+    .section
       .video
         %img{ src: "#{Configr.site['static_url']}/images/mission-impossible-rogue-nation/trailer.png" }
         %video{ src: "#{Configr.site['static_url']}/images/mission-impossible-rogue-nation/trailer-480p-zh.mp4" }
@@ -29,6 +35,8 @@ description: 电影
             %span
       .poster.poster1.poster-blur
     .section.poster.poster-collection
+
+%audio#music{height: '0', width: '0', loop:'loop', src: "#{Configr.site['static_url']}/images/mission-impossible-rogue-nation/theme.mp3" }
 
 .screen-arrowBox
   .screen-arrow
