@@ -1,4 +1,16 @@
 $(function() {
+
+  var musicNotPlayed = true;
+  var playMusic = function () {
+    $('.music-cover').removeClass('pause');
+    $('#music')[0].play();
+  };
+
+  var pauseMusic = function () {
+    $('.music-cover').addClass('pause');
+    $('#music')[0].pause();
+  };
+
   $sectionNumber = $('.full-page .section').length;
   $('.full-page').fullpage({
     controlArrows: true,
@@ -8,26 +20,21 @@ $(function() {
       } else {
         $('.screen-arrowBox').show();
       }
-      if (nextIndex == 2) {
-        $('#music')[0].play();
+      if (nextIndex == 2 && musicNotPlayed) {
+        playMusic();
+        musicNotPlayed = false;
       }
       return true;
     }
   });
 
   $('.player').tap(function (e) {
-    $('.music-cover').toggleClass('pause');
-    var music = $('#music')[0];
     if (music.paused && music.currentTime > 0) {
-      music.play();
+      playMusic();
     } else {
-      music.pause();
+      pauseMusic();
     }
   })
-
-  $('#music').bind('ended', function(){
-    $('.music-cover').addClass('pause');
-  });
 
   var $movieInfo = $('.movie-info');
   var $nav = $('.nav');
@@ -68,6 +75,7 @@ $(function() {
     $('.video img').hide();
     $('.video a').hide();
     $('.video video').show()[0].play();
+    pauseMusic();
     e.preventDefault();
   });
 });
