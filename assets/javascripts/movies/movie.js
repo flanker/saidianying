@@ -78,4 +78,9 @@ $(function() {
     pauseMusic();
     e.preventDefault();
   });
+
+});
+
+$(window).load(function () {
+  $('#loader-wrapper').remove();
 });
