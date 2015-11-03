@@ -1,0 +1,13 @@
+---
+base:
+  build: .
+  volumes:
+    - ".:/app" # share current directory -> to /app folder in container
+  ports:
+    - "80:4000"
+
+web:
+  extends:
+    file: docker-compose.yml
+    service: base
+  command: jekyll serve -H0.0.0.0
