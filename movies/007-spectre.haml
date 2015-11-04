@@ -1,0 +1,47 @@
+---
+layout: movie
+title: "007: 幽灵党 Spectre"
+tagline: 电影
+header: Pages
+group: navigation
+description: 电影
+---
+
+.logo
+  %img{src: "#{Configr.site['static_url']}/images/mission-impossible-rogue-nation/logo.jpg"}
+
+.movie-007-spectre
+  .full-page
+    .section.poster.poster1
+      .embedded-movie-info.movie-007-spectre
+        %h1.name
+          007: 幽灵党
+        %h1.name
+          007: Spectre
+        .year
+          2015年11月6日
+    .section
+      .music-cover
+        .img-wraper
+          %img{ src: "#{Configr.site['static_url']}/images/007-spectre/music.jpg" }
+        .player.pause
+        .music-info
+          .info
+            Sam Smith
+          .info
+            Writing's On The Wall
+      .poster.poster-music.poster-blur
+    .section
+      .video
+        %img{ src: "#{Configr.site['static_url']}/images/007-spectre/trailer.jpg" }
+        %video{ src: "#{Configr.site['static_url']}/images/007-spectre/trailer-480p-zh.mp4" }
+        %a{ href: '#' }
+          %span.play
+            %span
+      .poster.poster1.poster-blur
+    .section.poster.poster-collection
+
+%audio#music{height: '0', width: '0', loop:'loop', src: "#{Configr.site['static_url']}/images/007-spectre/sam_smith-writings_on_the_wall.mp3" }
+
+.screen-arrowBox
+  .screen-arrow
