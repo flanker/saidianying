@@ -1,15 +1,17 @@
 $(function() {
 
-  var musicNotPlayed = true;
-  var playMusic = function () {
-    $('.music-cover').removeClass('pause');
-    $('#music')[0].play();
-  };
+  if($('#music').length > 0) {
+    var musicNotPlayed = true;
+    var playMusic = function () {
+      $('.music-cover').removeClass('pause');
+      $('#music')[0].play();
+    };
 
-  var pauseMusic = function () {
-    $('.music-cover').addClass('pause');
-    $('#music')[0].pause();
-  };
+    var pauseMusic = function () {
+      $('.music-cover').addClass('pause');
+      $('#music')[0].pause();
+    };
+  }
 
   $sectionNumber = $('.full-page .section').length;
   $('.full-page').fullpage({

@@ -1,0 +1,46 @@
+.captain-america-civil-war {
+  .poster1 {
+    background-image: url({{ site.static_url }}/images/captain-america-civil-war/poster.jpg);
+  }
+  .poster-music {
+    background-image: url({{ site.static_url }}/images/captain-america-civil-war/music.jpg);
+  }
+  .poster-collection {
+    background-image: url({{ site.static_url }}/images/captain-america-civil-war/poster-collection.jpg);
+  }
+  .embedded-movie-info {
+    height: 200px;
+    padding-top: 130px;
+    bottom: 0;
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.9));
+    color: #111;
+
+    .name {
+      font-size: 1em;
+    }
+    .year {
+      padding-left: 0;
+    }
+    .red {
+      color: #ed1924;
+    }
+  }
+
+  .music-cover {
+    .img-wraper {
+      -webkit-animation: spinning 15000ms infinite linear;
+    }
+  }
+}
+
+.captain-america-civil-war.embedded-movie-info {
+  color: #eee;
+  .name {
+    display: block;
+    font-size: 1em;
+  }
+  .year {
+    padding-left: 0;
+  }
+}
