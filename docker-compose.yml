@@ -13,3 +13,11 @@ web:
   environment:
     STATIC_BASE: http://192.168.99.100
   command: jekyll serve -H0.0.0.0
+
+build:
+  extends:
+    file: docker-compose.yml
+    service: base
+  environment:
+    STATIC_BASE: http://saidianying.zhendewudi.com
+  command: jekyll build
