@@ -1,17 +1,19 @@
 $(function() {
 
-  if($('#music').length > 0) {
-    var musicNotPlayed = true;
-    var playMusic = function () {
-      $('.music-cover').removeClass('pause');
-      $('#music')[0].play();
-    };
-
-    var pauseMusic = function () {
-      $('.music-cover').addClass('pause');
-      $('#music')[0].pause();
-    };
+  if ($('#music').length > 0) {
+    var withMusic = true;
   }
+
+  var musicNotPlayed = true;
+  var playMusic = function () {
+    $('.music-cover').removeClass('pause');
+    $('#music')[0].play();
+  };
+
+  var pauseMusic = function () {
+    $('.music-cover').addClass('pause');
+    $('#music')[0].pause();
+  };
 
   $sectionNumber = $('.full-page .section').length;
   $('.full-page').fullpage({
@@ -22,7 +24,7 @@ $(function() {
       } else {
         $('.screen-arrowBox').show();
       }
-      if (nextIndex == 2 && musicNotPlayed) {
+      if (withMusic && nextIndex == 2 && musicNotPlayed) {
         playMusic();
         musicNotPlayed = false;
       }
@@ -75,9 +77,10 @@ $(function() {
 
   $('.video a').click(function (e) {
     $('.video img').hide();
-    $('.video a').hide();
     $('.video video').show()[0].play();
-    pauseMusic();
+    if (withMusic) {
+      pauseMusic();
+    }
     e.preventDefault();
   });
 

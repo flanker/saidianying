@@ -1,0 +1,39 @@
+.final-cut-2015 {
+
+  $movie-list: furious-7 avengers-age-of-ultron star-wars-the-force-awakens ant-man inside-out jurassic-world mad-max-fury-road mission-impossible-rogue-nation spectre terminator-genisys the-hunger-games-mockingjay the-martian;
+  @each $movie in $movie-list {
+    .poster-#{$movie} {
+      background-image: url({{ site.static_url }}/images/final-cut-2015/#{$movie}.jpg);
+    }
+  }
+
+  .poster-music {
+    background-image: url({{ site.static_url }}/images/final-cut-2015/music.jpg);
+  }
+  .poster-collection {
+    background-image: url({{ site.static_url }}/images/final-cut-2015/poster-collection.jpg);
+  }
+  .embedded-movie-info {
+    height: 200px;
+    padding-top: 130px;
+    bottom: 0;
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.9));
+    color: #e5e5e5;
+
+    .name {
+      display: block;
+      font-size: 1em;
+    }
+    .year {
+      display: block;
+      padding-left: 0;
+    }
+  }
+
+  .music-cover {
+    .img-wraper {
+      -webkit-animation: spinning 15000ms infinite linear;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+---
+layout: movie
+title: "2015年电影预告片大混编"
+tagline: 电影
+header: Pages
+group: navigation
+description: 电影
+---
+
+.logo
+  %img{src: "#{Configr.site['static_url']}/images/final-cut-2015/logo.jpg"}
+
+.final-cut-2015
+  .full-page
+    .section
+      .video
+        %img{ src: "#{Configr.site['static_url']}/images/final-cut-2015/trailer.jpg" }
+        %video{ src: "#{Configr.site['static_url']}/images/final-cut-2015/480p.mp4" }
+        %a{ href: '#' }
+          %span.play
+            %span
+      .poster.poster-collection.poster-blur
+    - [                                   |
+        ['furious-7', '速度与激情7', 'Furious 7', '2015年4月3日'],  |
+        ['avengers-age-of-ultron', '复仇者联盟：奥创纪元', 'Avengers: Age of Ultron', '2015年5月1日'],  |
+        ['mad-max-fury-road', '疯狂麦克斯：狂暴之路', 'Mad Max: Fury Road', '2015年5月15日'],  |
+        ['jurassic-world', '侏罗纪世界', 'Jurassic World', '2015年6月12日'],  |
+        ['inside-out', '头脑特工队', 'Inside Out', '2015年6月19日'],  |
+        ['ant-man', '蚁人', 'Ant-Man', '2015年6月29日'],  |
+        ['terminator-genisys', '终结者：创世纪', 'Terminator Genisys', '2015年7月1日'],  |
+        ['mission-impossible-rogue-nation', '碟中谍：神秘国度', 'Mission: Impossible - Rogue Nation', '2015年7月31日'],  |
+        ['the-martian', '火星救援', 'The Martian', '2015年10月2日'],  |
+        ['spectre', '007：幽灵党', 'Spectre', '2015年11月6日'],  |
+        ['the-hunger-games-mockingjay', '饥饿游戏：嘲笑鸟（下）', 'The Hunger Games: Mockingjay, Part 2', '2015年11月16日'],  |
+        ['star-wars-the-force-awakens', '星球大战：原力觉醒', 'Star Wars: The Force Awakens', '2015年12月18日']  |
+      ].each do |movie|                   |
+      .section.poster{class: "poster-#{movie[0]}"}
+        .embedded-movie-info
+          %h1.name= movie[1]
+          %h1.name= movie[2]
+          .year= movie[3]
+
+    .section.poster.poster-collection
+
+.screen-arrowBox
+  .screen-arrow
