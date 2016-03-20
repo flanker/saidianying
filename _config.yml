@@ -38,6 +38,8 @@ production_url : http://saidianying.oss-cn-beijing.aliyuncs.com
 static_url: <%= ENV.fetch('STATIC_BASE', 'http://saidianying.oss-cn-beijing.aliyuncs.com') %>
 # static_url: http://localhost:4000
 
+qiniu_host: http://7xkqsm.com1.z0.glb.clouddn.com
+
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :

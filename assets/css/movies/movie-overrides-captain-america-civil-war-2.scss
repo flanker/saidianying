@@ -1,0 +1,76 @@
+.captain-america-civil-war-2 {
+  .poster1 {
+    background-image: url({{ site.qiniu_host }}/captain-america-civil-war/poster.jpg);
+  }
+  .poster-collection {
+    background-image: url({{ site.qiniu_host }}/captain-america-civil-war/poster-collection-4.jpg);
+  }
+  .embedded-movie-info {
+    height: 200px;
+    padding-top: 130px;
+    bottom: 0;
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.9));
+    color: #111;
+
+    .name {
+      font-size: 1em;
+    }
+    .year {
+      padding-left: 0;
+    }
+    .red {
+      color: #ed1924;
+    }
+  }
+
+  .music-cover {
+    .img-wraper {
+      -webkit-animation: spinning 15000ms infinite linear;
+    }
+  }
+
+  .links {
+    .link {
+      height: 50%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: relative;
+
+        span {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          color: white;
+          background: rgba(0,0,0,0.5);
+          padding: 10px 5px;
+          font-size: 0.8em;
+        }
+      }
+
+      &.captain-america-civil-war {
+        background-image: url({{ site.qiniu_host }}/captain-america-civil-war/link-captain-america-civil-war.jpg);
+      }
+      &.batman-v-superman-dawn-of-justice {
+        background-image: url({{ site.qiniu_host }}/captain-america-civil-war/link-batman-v-superman-dawn-of-justice.jpg);
+      }
+    }
+  }
+}
+
+.captain-america-civil-war.embedded-movie-info {
+  color: #eee;
+  .name {
+    display: block;
+    font-size: 1em;
+  }
+  .year {
+    padding-left: 0;
+  }
+}

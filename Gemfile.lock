@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: https://ruby.taobao.org/
   specs:
     byebug (6.0.2)
     colorator (0.1)
@@ -69,4 +69,4 @@ DEPENDENCIES
   yui-compressor
 
 BUNDLED WITH
-   1.10.6
+   1.11.2

@@ -33,7 +33,8 @@ module JekyllAssetPipeline
 
     def convert
       static_url = Configr.site['static_url']
-      content = @content.gsub('{{ site.static_url }}', static_url)
+      qiniu_host = Configr.site['qiniu_host']
+      content = @content.gsub('{{ site.static_url }}', static_url).gsub('{{ site.qiniu_host }}', qiniu_host)
       return Sass::Engine.new(content, :syntax => :scss).render
     end
   end
