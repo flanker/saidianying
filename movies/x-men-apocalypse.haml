@@ -1,0 +1,43 @@
+---
+layout: movie
+title: "《X战警：天启》最新预告片（中文）"
+tagline: 电影
+header: Pages
+group: navigation
+description: 电影
+---
+
+.logo
+  %img{src: "#{Configr.site['qiniu_host']}/x-men-apocalypse/logo.jpg"}
+
+.x-men-apocalypse
+  .full-page
+    .section.poster.poster1
+      .embedded-movie-info.x-men-apocalypse
+        %h1.name
+          X-Men: Apocalypse
+        %h1.name
+          X战警：天启
+        .year
+          2016年5月
+    .section
+      .video
+        %img{ src: "#{Configr.site['qiniu_host']}/x-men-apocalypse/trailer.jpg" }
+        %video{ src: "#{Configr.site['qiniu_host']}/x-men-apocalypse/trailer-480p-zh-t.mp4" }
+        %a{ href: '#' }
+          %span.play
+            %span
+      .poster.poster1.poster-blur
+    .section.poster.poster-collection
+    .section.links
+      .link.captain-america-civil-war
+        %a{href: '/movies/captain-america-civil-war.html'}
+          %span
+            点击查看 《美国队长3：内战》第一版预告片（中文）
+      .link.batman-v-superman-dawn-of-justice
+        %a{href: '/movies/batman-v-superman-dawn-of-justice.html'}
+          %span
+            点击查看 《蝙蝠侠大战超人：正义黎明》第二版预告片（中文）
+
+.screen-arrowBox
+  .screen-arrow

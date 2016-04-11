@@ -1,0 +1,32 @@
+.links {
+  .link {
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: relative;
+
+      span {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: white;
+        background: rgba(0,0,0,0.5);
+        padding: 10px 5px;
+        font-size: 0.8em;
+      }
+    }
+
+    &.captain-america-civil-war {
+      background-image: url({{ site.qiniu_host }}/captain-america-civil-war/link-captain-america-civil-war.jpg);
+    }
+    &.batman-v-superman-dawn-of-justice {
+      background-image: url({{ site.qiniu_host }}/captain-america-civil-war/link-batman-v-superman-dawn-of-justice.jpg);
+    }
+  }
+}

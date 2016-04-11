@@ -1,9 +1,9 @@
-.captain-america-civil-war-2 {
+.x-men-apocalypse {
   .poster1 {
-    background-image: url({{ site.qiniu_host }}/captain-america-civil-war/poster.jpg);
+    background-image: url({{ site.qiniu_host }}/x-men-apocalypse/poster.jpg);
   }
   .poster-collection {
-    background-image: url({{ site.qiniu_host }}/captain-america-civil-war/poster-collection-4.jpg);
+    background-image: url({{ site.qiniu_host }}/x-men-apocalypse/poster-collection.jpg);
   }
   .embedded-movie-info {
     height: 200px;
@@ -28,17 +28,5 @@
     .img-wraper {
       -webkit-animation: spinning 15000ms infinite linear;
     }
-  }
-
-}
-
-.captain-america-civil-war.embedded-movie-info {
-  color: #eee;
-  .name {
-    display: block;
-    font-size: 1em;
-  }
-  .year {
-    padding-left: 0;
   }
 }
