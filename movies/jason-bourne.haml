@@ -1,0 +1,66 @@
+---
+layout: movie
+title: "Jason Bourne 《谍影重重5》- 中文预告片 + 主题曲 - 马特达蒙"
+tagline: 电影
+header: Pages
+group: navigation
+description: 电影
+---
+
+.logo
+  %img{src: "#{Configr.site['qiniu_host']}/jason-bourne/logo.jpg"}
+
+.jason-bourne
+  .full-page
+    .section.poster.poster1
+      .embedded-movie-info.jason-bourne
+        %h1.name
+          %span.thin
+            Jason
+          %span
+            Bourne
+        %h1.name
+          %span.thin
+            谍影
+          %span
+            重重
+        .year
+          2016年7月
+
+    .section
+      .music-cover
+        .img-wraper
+          %img{ src: "#{Configr.site['qiniu_host']}/jason-bourne/logo.jpg" }
+        .player.pause
+        .music-info
+          .info
+            Extreme Ways
+          .info
+            Moby
+      .poster.poster-music.poster-blur
+
+    .section
+      .video
+        %img{ src: "#{Configr.site['qiniu_host']}/jason-bourne/trailer.jpg" }
+        %video{ src: "#{Configr.site['qiniu_host']}/jason-bourne/jason-bourne-trailer-560-ch.mp4" }
+        %a{ href: '#' }
+          %span.play
+            %span
+      .poster.poster1.poster-blur
+
+    .section.poster.poster-collection
+
+    .section.links
+      .link.captain-america-civil-war
+        %a{href: '/movies/captain-america-civil-war-2.html'}
+          %span
+            点击查看 《美国队长3：内战》中文预告片
+      .link.x-men-apocalypse
+        %a{href: '/movies/x-men-apocalypse.html'}
+          %span
+            点击查看 《X战警：天启》中文预告片
+
+%audio#music{height: '0', width: '0', loop:'loop', src: "#{Configr.site['qiniu_host']}/jason-bourne/extreme-ways.mp3" }
+
+.screen-arrowBox
+  .screen-arrow
