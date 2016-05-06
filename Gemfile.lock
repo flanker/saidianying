@@ -1,5 +1,5 @@
 GEM
-  remote: https://ruby.taobao.org/
+  remote: http://gems.ruby-china.org/
   specs:
     byebug (6.0.2)
     colorator (0.1)
