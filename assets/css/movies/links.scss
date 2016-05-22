@@ -31,5 +31,8 @@
     &.x-men-apocalypse {
       background-image: url({{ site.qiniu_host }}/x-men-apocalypse/link-photo.jpg);
     }
+    &.jason-bourne {
+      background-image: url({{ site.qiniu_host }}/jason-bourne/link-photo.jpg);
+    }
   }
 }

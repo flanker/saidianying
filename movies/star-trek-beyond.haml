@@ -1,0 +1,64 @@
+---
+layout: movie
+title: "星际迷航：超越星辰 Star Trek Beyond 中文预告片"
+tagline: 电影
+header: Pages
+group: navigation
+description: 电影
+---
+
+.logo
+  %img{src: "#{Configr.site['qiniu_host']}/star-trek-beyond/logo.jpg"}
+
+.star-trek-beyond
+  .full-page
+    .section.poster.poster1
+      .embedded-movie-info.star-trek-beyond
+        %h1.name
+          Star Trek Beyond
+        %h1.name
+          星际迷航：超越星辰
+        .year
+          2016年7月
+
+    .section
+      .music-cover
+        .img-wraper
+          %img{ src: "#{Configr.site['qiniu_host']}/star-trek-beyond/logo.jpg" }
+        .player.pause
+        .music-info
+          .info
+            Main Theme
+          .info
+            主题曲
+          .info
+            Star Trek Into Darkness
+          .info
+            星际迷航：暗黑无界
+      .poster.poster-music.poster-blur
+
+    .section
+      .video
+        %img{ src: "#{Configr.site['qiniu_host']}/star-trek-beyond/trailer.jpg" }
+        %video{ src: "#{Configr.site['qiniu_host']}/star-trek-beyond/trailer-2-zh.mp4" }
+        %a{ href: '#' }
+          %span.play
+            %span
+      .poster.poster1.poster-blur
+
+    .section.poster.poster-collection
+
+    .section.links
+      .link.jason-bourne
+        %a{href: '/movies/jason-bourne.html'}
+          %span
+            点击查看 《谍影重重5》中文预告片
+      .link.x-men-apocalypse
+        %a{href: '/movies/x-men-apocalypse.html'}
+          %span
+            点击查看 《X战警：天启》中文预告片
+
+%audio#music{height: '0', width: '0', loop:'loop', src: "#{Configr.site['qiniu_host']}/star-trek-beyond/star-trek-into-darkness-main-theme.mp3" }
+
+.screen-arrowBox
+  .screen-arrow
