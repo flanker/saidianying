@@ -1,0 +1,50 @@
+---
+layout: movie
+title: "Warcraft 魔兽 中文预告片"
+tagline: 电影
+header: Pages
+group: navigation
+description: 电影
+---
+
+.logo
+  %img{src: "#{Configr.site['qiniu_host']}/warcraft/logo.jpg"}
+
+.warcraft
+  .full-page
+    .section.poster.poster1
+      .embedded-movie-info.warcraft
+        %h1.name
+          Warcraft
+        %h1.name
+          魔兽
+        .year
+          2016年6月8日
+
+    .section
+      .video
+        %img{ src: "#{Configr.site['qiniu_host']}/warcraft/trailer.jpg" }
+        %video{ src: "#{Configr.site['qiniu_host']}/warcraft/trailer-final-zh.mp4" }
+        %a{ href: '#' }
+          %span.play
+            %span
+      .poster.poster1.poster-blur
+
+    .section.poster.poster-collection
+
+    .section.links.links3
+      .link.jason-bourne
+        %a{href: '/movies/jason-bourne.html'}
+          %span
+            点击查看 Jason Bourne《谍影重重5》中文预告片
+      .link.star-trek-beyond
+        %a{href: '/movies/star-trek-beyond.html'}
+          %span
+            点击查看 Star Trek Beyond 《星际迷航：超越星辰》中文预告片
+      .link.x-men-apocalypse
+        %a{href: '/movies/x-men-apocalypse.html'}
+          %span
+            点击查看 X-Men Apocalypse 《X战警：天启》中文预告片
+
+.screen-arrowBox
+  .screen-arrow

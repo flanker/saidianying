@@ -34,5 +34,14 @@
     &.jason-bourne {
       background-image: url({{ site.qiniu_host }}/jason-bourne/link-photo.jpg);
     }
+    &.star-trek-beyond {
+      background-image: url({{ site.qiniu_host }}/star-trek-beyond/link-photo.jpg);
+    }
+  }
+
+  &.links3 {
+    .link {
+      height: 33.3%;
+    }
   }
 }
